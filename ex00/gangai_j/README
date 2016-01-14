@@ -1,4 +1,0 @@
-Si vous n'avez pas d'erreur et si votre programme renvoie 0, c'est que ça marche !
-
-> ./a.out > /dev/null ; echo $?
-> 0
