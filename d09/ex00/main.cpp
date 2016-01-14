@@ -5,7 +5,7 @@
 // Login   <gangai_j@epitech.net>
 // 
 // Started on  Thu Jan 14 11:42:23 2016 Johann Gangai
-// Last update Thu Jan 14 13:33:01 2016 Johann Gangai
+// Last update Thu Jan 14 14:31:19 2016 Johann Gangai
 //
 
 #include <iostream>
@@ -48,4 +48,5 @@ int	main()
   flo.TakeDamage(leo.CloseAttack() * 6);
   if (flo.getPv() > 0)
     std::cout << "CRITICAL ERROR : FLO IS SUPPOSED TO BE DEAD!!" << std::endl;
+  flo.TakeDamage(1);
 }
