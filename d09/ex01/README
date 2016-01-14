@@ -1,0 +1,13 @@
+Go faire les tests ci-dessous, si vous avez le bon output, ça marche !!
+
+
+TEST 1 :
+
+(gangai_j@gangai_j) $> ./a.out > user ; diff file user ; rm user
+(gangai_j@gangai_j) $>
+
+
+TEST 2 :
+
+(gangai_j@gangai_j) $> ./a.out > /dev/null ; echo $?
+(gangai_j@gangai_j) $> 0
