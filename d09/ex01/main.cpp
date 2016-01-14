@@ -5,7 +5,7 @@
 // Login   <perche_r@epitech.net>
 // 
 // Started on  Thu Jan 14 14:21:58 2016 Perchec Raphael
-// Last update Thu Jan 14 14:56:51 2016 Perchec Raphael
+// Last update Thu Jan 14 16:47:54 2016 Perchec Raphael
 //
 
 #include <iostream>
@@ -38,11 +38,14 @@ int	main()
       return (-1);
     }
   flo.TakeDamage(leo.CloseAttack());
+  flo.Range = Character::RANGE;
   leo.TakeDamage(flo.RangeAttack());
 
   flo.Heal();
+  leo.Range = Character::RANGE;
   flo.TakeDamage(leo.RangeAttack());
 
+  flo.Range = Character::CLOSE;
   leo.TakeDamage(flo.CloseAttack());
   leo.TakeDamage(flo.CloseAttack());
 
@@ -56,12 +59,14 @@ int	main()
 
   std::cout << leo.getName() << " is being a boss thanks to his food!" << std::endl;
 
+  leo.Range = Character::CLOSE;
   flo.TakeDamage(leo.CloseAttack() * 6);
   if (flo.getPv() > 0)
     std::cout << "CRITICAL ERROR : FLO IS SUPPOSED TO BE DEAD!!" << std::endl;
   flo.TakeDamage(1);
 
   johann.TakeDamage(leo.CloseAttack());
+  raph.Range = Character::RANGE;
   leo.TakeDamage(raph.RangeAttack());
   johann.TakeDamage(raph.RangeAttack());
   johann.TakeDamage(raph.CloseAttack());
