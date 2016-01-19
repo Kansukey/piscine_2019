@@ -1,0 +1,25 @@
+3
+5
+lemon
+banana
+3
+lemon
+########## test list
+### insertion
+1  0
+true
+false
+false  1
+true
+false
+false  2
+true
+false
+false  3
+### extraction
+true
+false  2
+true
+false  1
+true
+true  0
